@@ -8,6 +8,16 @@ const port = 8000;
 app.use(compression());
 app.use(logger('dev'));
 
+
+// CORS enabled
+app.use(function(req, res, next) {
+    // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "*");
+    res.header("Access-Control-Allow-Headers", "*");
+    next();
+   });
+   
 // Use the whole root as static files to be able to serve the html file and
 // the build folder
 app.set('port', process.env.PORT || 3000);
