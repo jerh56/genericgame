@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 2d Game Learning</title>
+    <title>Unity WebGL Player | 2dGameAPIClient</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">2d Game Learning</div>
+        <div id="unity-build-title">2dGameAPIClient</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/2dgame.loader.js";
+      var loaderUrl = buildUrl + "/Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/2dgame.data",
-        frameworkUrl: buildUrl + "/2dgame.framework.js",
-        codeUrl: buildUrl + "/2dgame.wasm",
+        dataUrl: buildUrl + "/Build.data.br",
+        frameworkUrl: buildUrl + "/Build.framework.js.br",
+        codeUrl: buildUrl + "/Build.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "2d Game Learning",
-        productVersion: "4.0.0",
+        productName: "2dGameAPIClient",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
