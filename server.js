@@ -11,12 +11,12 @@ app.use(logger('dev'));
 // Use the whole root as static files to be able to serve the html file and
 // the build folder
 app.set('port', process.env.PORT || 3000);
-app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/videogame')));
 // Send html on '/'path
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, + '/index.html'));
+    res.sendFile(path.join(__dirname, + '/videogame/index.html'));
 })
 // Create the server and listen on port
 http.createServer(app).listen(app.get('port'), () => {
-    console.log(`Server running on localhost:${app.get('port')}`);
+    console.log(`Game HTTP Server is running:${app.get('port')}`);
 });
